@@ -3,8 +3,8 @@ CREATE TABLE IF NOT EXISTS characters (
     puzzle_id INT NOT NULL,
     name VARCHAR(50) NOT NULL,
     x_min INT NOT NULL,
-    y_max INT NOT NULL,
-    x_min INT NOT NULL,
+    y_min INT NOT NULL,
+    x_max INT NOT NULL,
     y_max INT NOT NULL
 );
 

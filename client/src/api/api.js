@@ -27,3 +27,12 @@ export const getLeaderboard = async (puzzleId) => {
   const res = await fetch(`${API_URL}/scores/${puzzleId}`);
   return res.json();
 };
+
+export const checkClick = async (puzzleId, x, y) => {
+  const res = await fetch(`${API_URL}/check`, {
+    method: "POST",
+    headers: { "Content-type": "application/json" },
+    body: JSON.stringify({ puzzleId, x, y }),
+  });
+  return res.json();
+};
