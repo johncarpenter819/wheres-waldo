@@ -30,6 +30,8 @@ router.post("/validate", async (req, res) => {
     const match =
       x >= loc.x_min && x <= loc.x_max && y >= loc.y_min && y <= loc.y_max;
 
+    console.log({ x, y, loc, match });
+
     res.json({ success: match });
   } catch (err) {
     console.error(err);

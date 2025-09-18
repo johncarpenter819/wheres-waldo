@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.game-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(120deg, #ff0000, #ffffff, #ff0000, #ffffff);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+}
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.section {
+  background-color: rgb(201, 201, 201);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.leaderboard h1,
+.section h2 {
+  margin-bottom: 1rem;
+  color: #000000;
+}
+.puzzle-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+.puzzle-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.puzzle-container img {
+  max-width: 100%;
+  border-radius: 8px;
+  cursor: crosshair;
+  display: block;
+  transition: transform 0.2s ease;
+  width: 600px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+.puzzle-container img:hover {
+  transform: scale(1.05);
+}
+.message {
+  margin-top: 0.5rem;
+  color: #007700;
+  font-weight: bold;
+}
+.score-input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+}
+.score-input button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.score-input button:hover {
+  background-color: #0056b3;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.25rem 0;
+}
