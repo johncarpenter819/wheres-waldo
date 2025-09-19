@@ -1,6 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  background: linear-gradient(120deg, #ff0000, #ffffff, #fc0000, #ffffff);
 }
 .game-page {
   display: flex;
@@ -8,7 +9,7 @@ body {
   gap: 2rem;
   padding: 2rem;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(120deg, #ff0000, #ffffff, #ff0000, #ffffff);
+  background-color: black;
   background-size: 200% 200%;
   animation: gradientShift 15s ease infinite;
 }
@@ -24,19 +25,24 @@ body {
   }
 }
 .section {
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 .leaderboard h1,
 .section h2 {
   margin-bottom: 1rem;
-  color: #000000;
+  color: black;
 }
 .puzzle-section {
   margin: 2rem 0;
   text-align: center;
+  background-color: black;
+  border-radius: 10px;
+  padding: 2rem;
+  color: white;
 }
 .puzzle-container {
   position: relative;

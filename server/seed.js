@@ -17,10 +17,10 @@ const puzzles = [
   },
   {
     puzzle_id: 3,
-    x_min: 700,
-    y_min: 800,
-    x_max: 760,
-    y_max: 860,
+    x_min: 685,
+    y_min: 980,
+    x_max: 715,
+    y_max: 1020,
   },
 ];
 
