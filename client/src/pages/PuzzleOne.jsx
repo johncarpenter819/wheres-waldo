@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { validateClick, postScore } from "../api/api";
 import "../styles/PuzzleOne.css";
 
 const PuzzleOne = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const playerName = location.state?.playerName || "Anonymous";
 
   const [time, setTime] = useState(0);
@@ -61,6 +62,9 @@ const PuzzleOne = () => {
         alt="Puzzle One"
         onClick={handleClick}
       />
+      <button className="back-button" onClick={() => navigate("/")}>
+        Back to Game Page
+      </button>
     </div>
   );
 };

@@ -1,0 +1,23 @@
+.puzzle-page {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.puzzle-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.player-name,
+.timer {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.puzzle-image {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100vw;
+  align-self: center;
+}

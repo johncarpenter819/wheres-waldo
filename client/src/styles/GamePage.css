@@ -63,13 +63,14 @@ body {
   color: #007700;
   font-weight: bold;
 }
-.score-input {
-  flex: 1;
+/* .score-input {
+  max-width: 200px;
   padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-top: 0.5rem;
-}
+  display: flex;
+} */
 .score-input button {
   padding: 0.5rem 1rem;
   border: none;

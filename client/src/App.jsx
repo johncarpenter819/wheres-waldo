@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GamePage from "./pages/GamePage";
 import PuzzleOne from "./pages/PuzzleOne";
+import PuzzleTwo from "./pages/PuzzleTwo";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<GamePage />} />
           <Route path="puzzle-one" element={<PuzzleOne />} />
+          <Route path="puzzle-two" element={<PuzzleTwo />} />
         </Routes>
       </div>
     </Router>
